@@ -1,0 +1,12 @@
+@use "@material/typography/mdc-typography";
+
+@use "@material/card";
+@use "@material/layout-grid/mdc-layout-grid";
+
+// @include card.core-styles;
+
+.page-content {
+    padding: 16px;
+    margin-top: 128px;
+}
+

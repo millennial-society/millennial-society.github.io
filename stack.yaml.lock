@@ -10,7 +10,14 @@ packages:
       size: 8860
       sha256: 474bd1e22b8eb6c7ad8e397c1c6741204fff4b30ebc5d9d47576c43820d17e13
   original:
-    hackage: hakyll-4.15.1.0@sha256:df90fdb1e7e09e90557ad23a6d402ce042f820f690595e7e73db82220edcadcf,9924
+    hackage: hakyll-4.15.1.0
+- completed:
+    hackage: hakyll-sass-0.2.4@sha256:4d2fbd8b63f5ef15483fc6dda09e10eefd63b4f873ad38dec2a3607eb504a8ba,939
+    pantry-tree:
+      size: 217
+      sha256: c03e74e71d010f009b8d972efc31fbd6dd25183e6d9afbec55f4b7f0d4a74b47
+  original:
+    hackage: hakyll-sass-0.2.4
 snapshots:
 - completed:
     size: 586286
