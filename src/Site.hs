@@ -7,7 +7,10 @@ import           Hakyll
 --------------------------------------------------------------------------------
 
 config :: Configuration
-config = defaultConfiguration { destinationDirectory = "docs" }
+config = defaultConfiguration
+    { destinationDirectory = "docs"
+    , providerDirectory = "content"
+    }
 
 main :: IO ()
 main = hakyllWith config $ do
