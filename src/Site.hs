@@ -14,12 +14,17 @@ hakyllConfig = defaultConfiguration
 main :: IO ()
 main = hakyllWith hakyllConfig $ do
     loadTemplates
+    copyFiles
     compileSass
     compileIndex
 
-loadTemplates, compileSass, compileIndex :: Rules ()
+loadTemplates, copyFiles, compileSass, compileIndex :: Rules ()
 
 loadTemplates = match "templates/*" $ compile templateBodyCompiler
+
+copyFiles = match copiedFiles $ route idRoute >> compile copyFileCompiler
+    where
+        copiedFiles = fromList ["CNAME"]
 
 compileSass = match "css/*.scss" $ do
     route $ setExtension "css"
